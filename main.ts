@@ -8,3 +8,14 @@ basic.forever(function () {
     led.toggle(4, 4)
     basic.pause(1000)
 })
+basic.forever(function () {
+    basic.pause(1000)
+    basic.showLeds(`
+        . . . . .
+        . . . . .
+        # . . . .
+        . . . . .
+        . . . . .
+        `)
+    basic.clearScreen()
+})
